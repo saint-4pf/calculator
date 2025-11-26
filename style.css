@@ -1,0 +1,89 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#4f8df7,#9bc8ff)
+    font-family:'Poppins', sans-serif;
+}
+.calculator{
+    width:300px;
+background:rgba(255,255,255,0.25);
+    padding:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    
+    border-radius:10px;
+}
+#display{
+    
+    height:60px;
+    font-size:28px;
+    box-shadow:inset0 0 5px rgba(0,0,0,0.2);
+    text-align:right;
+    margin-bottom:15px;
+    padding:10px;
+    background:rgba(182, 179, 179, 0.4);
+    border:none;
+    border-radius:5px;
+    color:#333;
+}
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.btn{
+    padding:18px;
+    font-size:1.2rem;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    background:rgba(255 255 255 0.4);
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+    transition:0.2s;
+}
+.btn:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform:translateY(-3px);
+}
+.btn:active{
+    transform:scale(0.95);
+}
+.btn-operator{
+    background:#ff9500;
+    color:white;
+
+}
+.btn-operator:hover {
+    background: #ffde9b;
+}
+.btn-equals{
+    background:#4caf50;
+    color:white;
+    font-weight:bold;
+    
+
+}
+.btn-eqauls:hover{
+background:#5ec75f;
+}
+.btn-clear{
+    
+    background:#ef5350;
+    color:white;
+}
+.btn-clear:hover{
+    background:#ff6f63;
+}
+.btn-del{
+    background:#ffa726;
+    color:white;
+}
+.btn-del:hover{
+    background:#ffb74d;
+}
